@@ -1,0 +1,197 @@
+html {
+    box-sizing: border-box;
+    font-size: 1.0417vw;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*Шрифты*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+input,
+textarea,
+select {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+/* Шапка сайта */
+
+.block1{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.block1__container{
+    padding: 1rem;
+    max-width: 80rem;
+    margin: auto;
+    height: 4rem;
+    background-color:#009A58;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Основной блок */
+
+.block2__container{
+    width: 100%;
+    display: flex;
+    max-width: 80rem;
+    margin: auto;
+    margin-top: 1rem;
+    justify-content: space-between;
+    height: 49.8rem;
+}
+
+.block2__column1{
+    width: 25%;
+    background-color: #F2F2F2;
+    padding: 1rem;
+
+}
+
+.block2__column1-h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+    background-color: #F2F2F2;
+}
+
+.block2__column1-check{
+    padding-left: 1rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.block2__column2{
+    width: 75%;
+    background-color: white;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+.block2__column2-h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 3rem;
+}
+
+.block2__column2-p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+
+.block2__column2-cards{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.block2__column2-card{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    background-color: #F2F2F2;
+    width: 50%;
+    padding: 1rem;
+}
+
+.block2__column2-card-a{
+    color: #1CA3D0;
+    text-decoration: underline;
+}
+
+.block2__column2-h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.block2__column2-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-items: stretch;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.block2__column2-grid-card{
+    background-color: #F2F2F2;
+    padding: 1rem;
+}
+
+.block2__column2-grid-buttons{
+    display:grid ;
+    grid-template-areas:
+    "img a"
+    "img btn";
+    column-gap: 1rem;
+}
+
+.block2__column2-grid-img{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #C2C2C2;
+    grid-area: img;
+}
+
+.block2__column2-grid-a{
+    grid-area: a;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    color: #1CA3D0;
+}
+
+.block2__column2-grid-btn{
+    grid-area: btn;
+    background-color: #C2C2C2;
+    border-radius: 0rem;
+    width: 6rem;
+    border: none;
+    height: 1.7rem;
+    align-self: end;
+}
+
+.flex{
+    display: flex;
+}
