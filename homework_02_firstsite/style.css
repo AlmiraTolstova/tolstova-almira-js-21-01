@@ -30,24 +30,39 @@ body {
     overflow-x: hidden;
 }
 
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 /* Шапка сайта */
 
 .block1{
-    position: relative;
-    overflow: hidden;
     width: 100%;
+    align-items: start;
+    background-color:#009A58;
+    display: flex;
 }
 
 .block1__container{
     padding: 1rem;
-    max-width: 80rem;
+    width: 80rem;
     margin: auto;
-    height: 4rem;
-    background-color:#009A58;
+
+
+
+}
+
+.block1__h1{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2rem;
+    line-height: 2rem;
     color: white;
 }
 
@@ -64,7 +79,7 @@ body {
 }
 
 .block2__column1{
-    width: 25%;
+    width: 240px;
     background-color: #F2F2F2;
     padding: 1rem;
 
@@ -74,7 +89,7 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 2rem;
     background-color: #F2F2F2;
 }
@@ -89,7 +104,7 @@ body {
 }
 
 .block2__column2{
-    width: 75%;
+    width: 100%;
     background-color: white;
     padding: 1rem 0rem 1rem 1rem;
 }
@@ -200,15 +215,15 @@ body {
 
 .footer{
     width: 100%;
-    height: 80px;
+    height: 4rem;
     margin-top: 1rem;
+    background-color: #F2F2F2;
 }
 
 .footer__container{
     max-width: 80rem;
     margin: auto;
     background-color: #F2F2F2;
-    height: 80px;
     padding: 1rem;
     display: flex;
     justify-content:space-between;

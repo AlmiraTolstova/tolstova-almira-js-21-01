@@ -7,6 +7,7 @@
     <title>Домашнее задание</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
@@ -14,16 +15,14 @@
 <body>
 <!-- Шапка сайта -->
 <div class="block1">
-    <div class="block1__container">
-        <header>
-            <h1>Интернет-магазин "Не только красивое"</h1>
-        </header>
-    </div>
+    <header class="block1__container">
+            <h1 class="block1__h1">Интернет-магазин "Не только красивое"</h1>
+    </header>
 </div>
 
 <!-- Основной блок -->
 <main class="block2__container">
-    <div class="block2__column1">
+    <aside class="block2__column1">
         <h4 class="block2__column1-h4">Морская рыба</h4>
 
         <div class="block2__column1-check">
@@ -54,9 +53,9 @@
         <div class="block2__column1-check">
             <input type="checkbox" ><label for="">Налим</label>
         </div>
-    </div>
+    </aside>
 
-    <div class="block2__column2">
+    <article class="block2__column2">
 
         <h2 class="block2__column2-h2">Рыбы на любой вкус </h2>
         <p class="block2__column2-p">Мы продаем рыбов, а не только показываем!</p>
@@ -115,9 +114,8 @@
                     <button class="block2__column2-grid-btn">Купить</button>
                 </div>
             </div>
-
         </div>
-    </div>
+    </article>
 </main>
 
 <!-- Подвал -->

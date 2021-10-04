@@ -1,0 +1,25 @@
+
+// Большие устройства (1400px и выше)
+@media (min-width: 1400px) {
+
+}
+
+// Большие устройства (1200px и выше)
+@media (min-width: 1200px) {
+
+}
+
+// Средние устройства (планшет, 768px и выше)
+@media (min-width: 768px) {
+    .block1__container{
+     height: 6rem;
+    }
+
+}
+
+
+@media (max-width:520px){
+    .block2__column1 {
+        display:none;
+    }
+}
