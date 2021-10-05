@@ -2,6 +2,9 @@ const buttonSwitchTheme = document.getElementById('switch-theme');
 // Добавим обработчик для события "click", предоставив callback.
 // Теперь по клику на элемент будет всплывать подсказка.
 
+let arrayLightTheme=['.white-text__light-theme', '.black-text__light-theme','.bg-white__light-theme','.bg-gray__light-theme','.bg-mgray__light-theme','.btn__light-theme'];
+let arrayDarkTheme=['.black-text__dark-theme','.white-text__dark-theme','.bg-black__dark-theme','.bg-gray__dark-theme','.bg-lgray__dark-theme','.btn__dark-theme']
+
 let currentTheme=false; //false - light theme, true - dark theme
 
 buttonSwitchTheme.addEventListener('click', function (event) {
@@ -9,7 +12,7 @@ buttonSwitchTheme.addEventListener('click', function (event) {
     console.log(currentTheme)
     if (currentTheme==false)
     {
-        let elementsLightTheme=document.querySelectorAll(".white-text__light-theme");
+        let elementsLightTheme=document.querySelectorAll(".white-text__light-theme, .black-text__light-theme");
         console.log(elementsLightTheme.length)
         for(i=0;i<elementsLightTheme.length;i++){
             console.log(elementsLightTheme[i], "номер объекта: ", i);

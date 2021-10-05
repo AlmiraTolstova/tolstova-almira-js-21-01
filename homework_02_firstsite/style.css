@@ -274,9 +274,9 @@ body{
     color: black;
  }
 
-  .white-text__dark-theme{
+.white-text__dark-theme{
      color: white;
-  }
+}
 
 .bg-black__dark-theme{
    background-color:#212121;
@@ -291,7 +291,7 @@ body{
     color:white
 }
 
-.btn__light-theme{
+.btn__dark-theme{
     background-color: #F5F5F5;
     color:#009A58;
     border-radius: 0rem;
