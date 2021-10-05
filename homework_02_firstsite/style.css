@@ -52,9 +52,8 @@ body{
     padding: 1rem;
     width: 80rem;
     margin: auto;
-
-
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .block1__h1{
@@ -63,10 +62,12 @@ body{
     font-weight: 500;
     font-size: 2rem;
     line-height: 2rem;
-    color: white;
 }
 
 /* Основной блок */
+.block2{
+    flex: 1 0 auto;
+}
 
 .block2__container{
     width: 100%;
@@ -75,12 +76,12 @@ body{
     margin: auto;
     margin-top: 1rem;
     justify-content: space-between;
-    height: 49.8rem;
+    /*height: 49.8rem;*/
 }
 
 .block2__column1{
     width: 240px;
-    background-color: #F2F2F2;
+    /*background-color: #F2F2F2;*/
     padding: 1rem;
 }
 
@@ -90,7 +91,7 @@ body{
     font-weight: 500;
     font-size: 0.9rem;
     line-height: 2rem;
-    background-color: #F2F2F2;
+   /* background-color: #F2F2F2;*/
 }
 
 .block2__column1-check{
@@ -137,7 +138,7 @@ body{
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.6rem;
-    background-color: #F2F2F2;
+    /*background-color: #F2F2F2;*/
     width: 50%;
     padding: 1rem;
 }
@@ -167,7 +168,7 @@ body{
 }
 
 .block2__column2-grid-card{
-    background-color: #F2F2F2;
+    /*background-color: #F2F2F2;*/
     padding: 1rem;
 }
 
@@ -182,7 +183,7 @@ body{
 .block2__column2-grid-img{
     width: 4.5rem;
     height: 4.5rem;
-    background-color: #C2C2C2;
+    /*background-color: #C2C2C2;*/
     grid-area: img;
 }
 
@@ -198,11 +199,11 @@ body{
 
 .block2__column2-grid-btn{
     grid-area: btn;
-    background-color: #C2C2C2;
-    border-radius: 0rem;
+    /*background-color: #C2C2C2;*/
+    /*border-radius: 0rem;
     width: 6rem;
     border: none;
-    height: 1.7rem;
+    height: 1.7rem;*/
     align-self: end;
 }
 
@@ -215,18 +216,16 @@ body{
 .footer{
     width: 100%;
     height: 4rem;
-    margin-top: 1rem;
-    background-color: #F2F2F2;
+    /*background-color: #F2F2F2;*/
 }
 
 .footer__container{
     max-width: 80rem;
     margin: auto;
-    background-color: #F2F2F2;
     padding: 1rem;
     display: flex;
     justify-content:space-between;
-    align-items: center;
+    /*align-items: center;*/
     align-items: end;
 }
 
@@ -237,3 +236,67 @@ body{
     font-size: 1rem;
     line-height: 1.6rem;
 }
+
+/* Модификаторы светлой темы*/
+
+ .white-text__light-theme{
+    color: white;
+ }
+
+ .black-text__light-theme{
+    color: black;
+ }
+
+ .bg-white__light-theme{
+ background-color:white;
+ }
+
+.bg-gray__light-theme{
+  background-color:#F2F2F2;
+}
+
+.bg-mgray__light-theme{
+    background-color: #C2C2C2;
+}
+
+.btn__light-theme{
+    background-color: #C2C2C2;
+    color:black;
+    border-radius: 0rem;
+    width: 8rem;
+    border: none;
+    height: 1.7rem;
+}
+
+ /* Модификаторы темной темы*/
+
+.black-text__dark-theme{
+    color: black;
+ }
+
+  .white-text__dark-theme{
+     color: white;
+  }
+
+.bg-black__dark-theme{
+   background-color:#212121;
+}
+
+.bg-gray__dark-theme{
+  background-color:#424242;
+}
+
+.bg-lgray__dark-theme{
+    background-color: #F5F5F5;
+    color:white
+}
+
+.btn__light-theme{
+    background-color: #F5F5F5;
+    color:#009A58;
+    border-radius: 0rem;
+    width: 8rem;
+    border: none;
+    height: 1.7rem;
+}
+
