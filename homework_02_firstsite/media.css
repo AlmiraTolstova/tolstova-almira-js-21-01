@@ -1,21 +1,55 @@
 
-// Большие устройства (1400px и выше)
-@media (min-width: 1400px) {
-
-}
-
-// Большие устройства (1200px и выше)
-@media (min-width: 1200px) {
-
-}
-
-// Средние устройства (планшет, 768px и выше)
-@media (min-width: 768px) {
-    .block1__container{
-     height: 6rem;
+/*Средние устройства (планшет, 768px и выше)*/
+@media (max-width:768px) {
+    /* Шапка сайта */
+    .block1{
+        height: 8rem;
     }
 
+    .block1__h1 {
+        font-size: 3rem;
+    }
+
+    /* Основной блок */
+    .block2__column1-h4 {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .block2__column1-check {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    .block2__column2-h2 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .block2__column2-p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .block2__column2-card {
+        font-size: 1.74rem;
+        line-height: 2.4rem;
+    }
+
+    .block2__column2-grid-a {
+        font-size: 1.45rem;
+        line-height: 1.75rem;
+    }
+
+    /* Подвал */
+    .footer__container-h5 {
+        font-size: 1.5rem;
+    }
 }
+
 
 
 @media (max-width:520px){
