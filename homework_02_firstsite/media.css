@@ -1,0 +1,114 @@
+
+/*Средние устройства (планшет, 768px и выше)*/
+@media (max-width:768px) {
+    /* Шапка сайта */
+    .block1{
+        height: 8rem;
+    }
+
+    .block1__h1 {
+        font-size: 3rem;
+    }
+
+    /* Основной блок */
+    .block2__column1-h4 {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .block2__column1-check {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    .block2__column2-h2 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .block2__column2-p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .block2__column2-card {
+        font-size: 1.74rem;
+        line-height: 2.4rem;
+    }
+
+    .block2__column2-grid-a {
+        font-size: 1.45rem;
+        line-height: 1.75rem;
+    }
+
+    /* Подвал */
+    .footer__container-h5 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* X-Small devices (смартфоны менее 576px) */
+@media (max-width:520px) {
+    /* Шапка сайта */
+    .block1 {
+        height: 10rem;
+    }
+
+    /* Основной блок */
+    .block2__column1 {
+        display:none;
+    }
+
+    .block2__column2-h2 {
+        font-size: 4.1rem;
+        line-height: 5rem;
+    }
+
+    .block2__column2-p {
+        font-size: 2.8rem;
+    }
+
+    .block2__column2-card {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+   .block2__column2-h3 {
+       font-size: 2.8rem;
+       line-height: 2rem;
+   }
+
+   .block2__column2-grid {
+       grid-template-columns: 1fr 1fr;
+   }
+
+    .block2__column2-grid-img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .block2__column2-grid-a {
+        align-self: center;
+        font-size: 3rem;
+        line-height: 2rem;
+    }
+
+    .block2__column2-grid-btn {
+        width: 10rem;
+        height: 3rem;
+        font-size: 2rem ;
+    }
+
+    /* Подвал */
+    .footer {
+        height: 8rem;
+    }
+
+    .footer__container-h5 {
+        font-size: 2.3rem;
+    }
+
+}
