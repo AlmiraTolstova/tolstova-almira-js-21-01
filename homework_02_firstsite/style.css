@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box;
     font-size: 1.0417vw;
-
 }
 
 *,
@@ -33,6 +32,7 @@ body {
 html{
     height: 100%;
 }
+
 body{
     display: flex;
     flex-direction: column;
@@ -76,13 +76,12 @@ body{
     margin: auto;
     margin-top: 1rem;
     justify-content: space-between;
-    /*height: 49.8rem;*/
 }
 
 .block2__column1{
-    width: 240px;
-    /*background-color: #F2F2F2;*/
+    flex-basis:240px;
     padding: 1rem;
+    flex-shrink: 0;
 }
 
 .block2__column1-h4{
@@ -91,7 +90,6 @@ body{
     font-weight: 500;
     font-size: 0.9rem;
     line-height: 2rem;
-   /* background-color: #F2F2F2;*/
 }
 
 .block2__column1-check{
@@ -104,9 +102,8 @@ body{
 }
 
 .block2__column2{
-    width: 100%;
-    /*background-color: white;*/
     padding: 1rem 0rem 1rem 1rem;
+    flex: 1;
 }
 
 .block2__column2-h2{
@@ -138,7 +135,6 @@ body{
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.6rem;
-    /*background-color: #F2F2F2;*/
     width: 50%;
     padding: 1rem;
 }
@@ -168,7 +164,6 @@ body{
 }
 
 .block2__column2-grid-card{
-    /*background-color: #F2F2F2;*/
     padding: 1rem;
 }
 
@@ -183,7 +178,6 @@ body{
 .block2__column2-grid-img{
     width: 4.5rem;
     height: 4.5rem;
-    /*background-color: #C2C2C2;*/
     grid-area: img;
 }
 
@@ -199,11 +193,6 @@ body{
 
 .block2__column2-grid-btn{
     grid-area: btn;
-    /*background-color: #C2C2C2;*/
-    /*border-radius: 0rem;
-    width: 6rem;
-    border: none;
-    height: 1.7rem;*/
     align-self: end;
 }
 
@@ -216,7 +205,6 @@ body{
 .footer{
     width: 100%;
     height: 4rem;
-    /*background-color: #F2F2F2;*/
 }
 
 .footer__container{
@@ -225,7 +213,6 @@ body{
     padding: 1rem;
     display: flex;
     justify-content:space-between;
-    /*align-items: center;*/
     align-items: end;
 }
 

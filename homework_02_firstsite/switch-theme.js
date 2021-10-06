@@ -8,7 +8,6 @@ let arrayDarkTheme=['black-text__dark-theme','white-text__dark-theme','bg-black_
 let currentTheme=false; //false - light theme, true - dark theme
 
 buttonSwitchTheme.addEventListener('click', function (event) {
-    //document.getElementsByClassName("white-text__light-theme").classList.toggle("black-text__dark-theme");
     console.log(currentTheme)
     currentTheme=makeSwitchSelector(arrayLightTheme, arrayDarkTheme, currentTheme);
 
