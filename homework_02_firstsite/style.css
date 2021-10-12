@@ -29,11 +29,11 @@ body {
     overflow-x: hidden;
 }
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -41,22 +41,23 @@ body{
 
 /* Шапка сайта */
 
-.block1{
+.block1 {
     width: 100%;
     align-items: start;
-    background-color:#009A58;
+    background-color: #009A58;
     display: flex;
 }
 
-.block1__container{
+.block1__container {
     padding: 1rem;
     width: 80rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.block1__h1{
+.block1__h1 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -65,11 +66,11 @@ body{
 }
 
 /* Основной блок */
-.block2{
+.block2 {
     flex: 1 0 auto;
 }
 
-.block2__container{
+.block2__container {
     width: 100%;
     display: flex;
     max-width: 80rem;
@@ -78,13 +79,13 @@ body{
     justify-content: space-between;
 }
 
-.block2__column1{
-    flex-basis:240px;
+.block2__column1 {
+    flex-basis: 240px;
     padding: 1rem;
     flex-shrink: 0;
 }
 
-.block2__column1-h4{
+.block2__column1-h4 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -92,7 +93,7 @@ body{
     line-height: 2rem;
 }
 
-.block2__column1-check{
+.block2__column1-check {
     padding-left: 1rem;
     font-family: 'Roboto';
     font-style: normal;
@@ -101,12 +102,12 @@ body{
     line-height: 1.3rem;
 }
 
-.block2__column2{
+.block2__column2 {
     padding: 1rem 0rem 1rem 1rem;
     flex: 1;
 }
 
-.block2__column2-h2{
+.block2__column2-h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -114,7 +115,7 @@ body{
     line-height: 3rem;
 }
 
-.block2__column2-p{
+.block2__column2-p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -122,14 +123,14 @@ body{
     line-height: 3rem;
 }
 
-.block2__column2-cards{
+.block2__column2-cards {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
-.block2__column2-card{
+.block2__column2-card {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -137,14 +138,16 @@ body{
     line-height: 1.6rem;
     width: 50%;
     padding: 1rem;
+
 }
 
-.block2__column2-card-a{
+
+.block2__column2-card-a {
     color: #1CA3D0;
     text-decoration: underline;
 }
 
-.block2__column2-h3{
+.block2__column2-h3 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -153,7 +156,7 @@ body{
     margin-bottom: 2rem;
 }
 
-.block2__column2-grid{
+.block2__column2-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1rem;
@@ -163,25 +166,25 @@ body{
     padding-bottom: 1rem;
 }
 
-.block2__column2-grid-card{
+.block2__column2-grid-card {
     padding: 1rem;
 }
 
-.block2__column2-grid-buttons{
-    display:grid ;
+.block2__column2-grid-buttons {
+    display: grid;
     grid-template-areas:
     "img a"
     "img btn";
     column-gap: 1rem;
 }
 
-.block2__column2-grid-img{
+.block2__column2-grid-img {
     width: 4.5rem;
     height: 4.5rem;
     grid-area: img;
 }
 
-.block2__column2-grid-a{
+.block2__column2-grid-a {
     grid-area: a;
     font-family: 'Roboto';
     font-style: normal;
@@ -191,32 +194,32 @@ body{
     color: #1CA3D0;
 }
 
-.block2__column2-grid-btn{
+.block2__column2-grid-btn {
     grid-area: btn;
     align-self: end;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
 /* Подвал */
 
-.footer{
+.footer {
     width: 100%;
     height: 4rem;
 }
 
-.footer__container{
+.footer__container {
     max-width: 80rem;
     margin: auto;
     padding: 1rem;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: end;
 }
 
-.footer__container-h5{
+.footer__container-h5 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -226,63 +229,262 @@ body{
 
 /* Модификаторы светлой темы*/
 
- .white-text__light-theme{
+.white-text__light-theme {
     color: white;
- }
+}
 
- .black-text__light-theme{
+.black-text__light-theme {
     color: black;
- }
-
- .bg-white__light-theme{
- background-color:white;
- }
-
-.bg-gray__light-theme{
-  background-color:#F2F2F2;
 }
 
-.bg-mgray__light-theme{
+.bg-white__light-theme {
+    background-color: white;
+}
+
+.bg-gray__light-theme {
+    background-color: #F2F2F2;
+}
+
+.bg-mgray__light-theme {
     background-color: #C2C2C2;
 }
 
-.btn__light-theme{
+.btn__light-theme {
     background-color: #C2C2C2;
-    color:black;
+    color: black;
     border-radius: 0rem;
     width: 8rem;
     border: none;
     height: 1.7rem;
 }
 
- /* Модификаторы темной темы*/
+/* Модификаторы темной темы*/
 
-.black-text__dark-theme{
+.black-text__dark-theme {
     color: black;
- }
-
-.white-text__dark-theme{
-     color: white;
 }
 
-.bg-black__dark-theme{
-   background-color:#212121;
+.white-text__dark-theme {
+    color: white;
 }
 
-.bg-gray__dark-theme{
-  background-color:#424242;
+.bg-black__dark-theme {
+    background-color: #212121;
 }
 
-.bg-green__dark-theme{
+.bg-gray__dark-theme {
+    background-color: #424242;
+}
+
+.bg-green__dark-theme {
     background-color: #009A58;
 }
 
-.btn__dark-theme{
+.btn__dark-theme {
     background-color: #F5F5F5;
-    color:#009A58;
+    color: #009A58;
     border-radius: 0rem;
     width: 8rem;
     border: none;
     height: 1.7rem;
 }
 
+/*Анимация*/
+.animation-card:hover {
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    from {
+        background-color: #F2F2F2;
+    }
+    to {
+        background-color: #009A58;
+    }
+}
+
+.animation-logo {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+}
+
+.animation-logo .animation-logo__cube {
+    position: relative;
+    transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+}
+
+.animation-logo .animation-logo__cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+
+.animation-logo .animation-logo__cube:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+    animation: animation-logo-fold 2.76s infinite linear both;
+    -o-animation: animation-logo-fold 2.76s infinite linear both;
+    -ms-animation: animation-logo-fold 2.76s infinite linear both;
+    -webkit-animation: animation-logo-fold 2.76s infinite linear both;
+    -moz-animation: animation-logo-fold 2.76s infinite linear both;
+    transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+}
+
+.animation-logo .animation-logo__c2 {
+    transform: scale(1.1) rotateZ(90deg);
+    -o-transform: scale(1.1) rotateZ(90deg);
+    -ms-transform: scale(1.1) rotateZ(90deg);
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+    -moz-transform: scale(1.1) rotateZ(90deg);
+}
+
+.animation-logo .animation-logo__c3 {
+    transform: scale(1.1) rotateZ(180deg);
+    -o-transform: scale(1.1) rotateZ(180deg);
+    -ms-transform: scale(1.1) rotateZ(180deg);
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+    -moz-transform: scale(1.1) rotateZ(180deg);
+}
+
+.animation-logo .animation-logo__c4 {
+    transform: scale(1.1) rotateZ(270deg);
+    -o-transform: scale(1.1) rotateZ(270deg);
+    -ms-transform: scale(1.1) rotateZ(270deg);
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+    -moz-transform: scale(1.1) rotateZ(270deg);
+}
+
+.animation-logo .animation-logo__c2:before {
+    animation-delay: 0.35s;
+    -o-animation-delay: 0.35s;
+    -ms-animation-delay: 0.35s;
+    -webkit-animation-delay: 0.35s;
+    -moz-animation-delay: 0.35s;
+}
+
+.animation-logo .animation-logo__c3:before {
+    animation-delay: 0.69s;
+    -o-animation-delay: 0.69s;
+    -ms-animation-delay: 0.69s;
+    -webkit-animation-delay: 0.69s;
+    -moz-animation-delay: 0.69s;
+}
+
+.animation-logo .animation-logo__c4:before {
+    animation-delay: 1.04s;
+    -o-animation-delay: 1.04s;
+    -ms-animation-delay: 1.04s;
+    -webkit-animation-delay: 1.04s;
+    -moz-animation-delay: 1.04s;
+}
+
+
+@keyframes animation-logo-fold {
+    0%, 10% {
+        transform: perspective(136px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        transform: perspective(136px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        transform: perspective(136px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes animation-logo-fold {
+    0%, 10% {
+        -o-transform: perspective(136px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        -o-transform: perspective(136px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        -o-transform: perspective(136px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes animation-logo-fold {
+    0%, 10% {
+        -ms-transform: perspective(136px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        -ms-transform: perspective(136px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        -ms-transform: perspective(136px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes animation-logo-fold {
+    0%, 10% {
+        -webkit-transform: perspective(136px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        -webkit-transform: perspective(136px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        -webkit-transform: perspective(136px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes animation-logo-fold {
+    0%, 10% {
+        -moz-transform: perspective(136px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        -moz-transform: perspective(136px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        -moz-transform: perspective(136px) rotateY(180deg);
+        opacity: 0;
+    }
+}
