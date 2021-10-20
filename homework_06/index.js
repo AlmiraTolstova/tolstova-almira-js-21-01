@@ -19,3 +19,4 @@ const fib = memoize(fibonacci);
 
 console.log(fib(6))
 console.log(fib(7))
+
