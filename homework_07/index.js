@@ -5,3 +5,49 @@
 // Разработать метод rename, для смены клички животного. Новая кличка должна содержать только кирилические символы, пробелы или символ "-".
 // Выполнить то же самое использую функции конструкторы. Выполнить то же самое, используя классы.
 
+const animal = {
+    name: 'Animal',
+    eat() {
+        console.log(`${this.name}ест`)
+    },
+    say() {
+        console.log(`неизвестное животное молчит`)
+    },
+}
+
+const cat = {
+    __proto__: animal,
+    name: 'Барсик ',
+    say() {
+        console.log(`Котик говорит: Мяу!`)
+    },
+    hunt(){
+        console.log(`${this.name}охотится`)
+    }
+}
+cat.say();
+
+const dog = {
+    __proto__: animal,
+    name:'Алекс ',
+    say() {
+        console.log(`Пёс говорит: Гав!`)
+    },
+}
+dog.say();
+const parrot = {
+    __proto__: animal,
+    name:'Кеша ',
+    say() {
+        console.log(`Попугай говорит: Ча-ча-ча!`)
+    },
+
+}
+
+parrot.say();
+console.log(animal);
+console.log(cat);
+console.log(dog);
+console.log(parrot);
+
+console.log(Object.getOwnPropertyDescriptors(animal));
