@@ -28,43 +28,54 @@ console.log(fib(7))
 //     ["pets",[["dog", "Faust"],["cat", "Balthazar"]]]
 
 //Решение задачи через цикл
-const family=[["name", "Anna"], ["age", 22], ["pets",[["dog", "Faust"],["cat", "Balthazar"]]]]
-function sumFamily(family){
-    const newArray={};
-    for(let i=0; i<=family.length-1;i++){
-        if(typeof(family[i][1])!="object"){
-            newArray[family[i][0]]=family[i][1]
-        }else {
-            const subArray={};
-            for(let j=0; j<=family[i][1].length-1;j++){
-                subArray[family[i][1][j][0]]=family[i][1][j][1];
+const family = [["name", "Anna"], ["age", 22], ["pets", [["dog", "Faust"], ["cat", "Balthazar"]]]]
+
+function sumFamily(family) {
+    const newArray = {};
+    for (let i = 0; i <= family.length - 1; i++) {
+        if (typeof (family[i][1]) != "object") {
+            newArray[family[i][0]] = family[i][1]
+        } else {
+            const subArray = {};
+            for (let j = 0; j <= family[i][1].length - 1; j++) {
+                subArray[family[i][1][j][0]] = family[i][1][j][1];
             }
-            newArray[family[i][0]]=subArray;
+            newArray[family[i][0]] = subArray;
         }
     }
     return newArray;
 }
+
 console.log(sumFamily(family));
 
 //Решение задачи через метод
-const map = new Map([["name", "Anna"], ["age", 22], ["pets",[["dog", "Faust"],["cat", "Balthazar"]]]]);
-const family1=[["name", "Anna"], ["age", 22], ["pets",[["dog", "Faust"],["cat", "Balthazar"]]]];
-function  sumArray(family){
+const map = new Map([["name", "Anna"], ["age", 22], ["pets", [["dog", "Faust"], ["cat", "Balthazar"]]]]);
+const family1 = [["name", "Anna"], ["age", 22], ["pets", [["dog", "Faust"], ["cat", "Balthazar"]]]];
+
+function sumArray(family) {
     const newArray = Object.fromEntries(family);
     return console.log(newArray);
 }
+
 sumArray(family1);
 
 
 //Решение задачи через рекурсию
-console.log(Object.fromEntries([["name", "Anna"]]));
-let i=0;
-function frec(family, i){
-    const NA= Object.fromEntries([family[i]]);
-    i++;
-    if(i<family.length){
-        frec(family, i);
-    }
-    return console.log(NA);
+
+function ArrayToObject(arr) {
+    return arr.reduce((prev, curr) => {
+        if (typeof (curr[1]) != "object") {
+            return {
+                ...prev,
+                [curr[0]]: curr[1]
+            }
+        } else {
+            return {
+                ...prev,
+                [curr[0]]: ArrayToObject(curr[1])
+            }
+        }
+    }, {})
 }
-frec(family1, i);
+
+console.log((ArrayToObject(family1)));
