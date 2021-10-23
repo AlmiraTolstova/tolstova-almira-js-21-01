@@ -15,25 +15,10 @@ const animal = {
         console.log(`неизвестное животное молчит`)
     },
     rename(newName) {
+        if(/^[А-я]*$/.test(newName))
         this.name=newName;
     }
 }
-
-
-stroka.replace(/[^а-яёА-ЯЁ ]/g,"")
-
-Object.defineProperties(animal, {
-    "name":{enumerable: false, configurable: false, writable: false},
-    "eat":{enumerable: false,
-        configurable: false,
-        writable: false}
-})
-Object.defineProperty(animal, 'name', {
-    enumerable: false,
-    configurable: false,
-    writable: false,
-});
-
 
 const cat = {
     __proto__: animal,
@@ -46,11 +31,6 @@ const cat = {
     }
 }
 
-
-// delete cat.say();
-// console.log(cat.say());
-
-
 const dog = {
     __proto__: animal,
     name: 'Алекс ',
@@ -59,22 +39,54 @@ const dog = {
     },
 }
 dog.say();
+
 const parrot = {
     __proto__: animal,
     name: 'Кеша ',
     say() {
         console.log(`Попугай говорит: Ча-ча-ча!`)
     },
-
 }
 
-//Разработать метод rename, для смены клички животного. Новая кличка должна содержать только кирилические символы, пробелы или символ "-".
-
-parrot.say();
 console.log(animal);
 console.log(cat);
 console.log(dog);
 console.log(parrot);
 
+//Перечисленные методы и свойства должны быть защищены от удаления и перезаписи. Методы должны быть неперечисляемыми.
+Object.defineProperties(animal, {
+    "name":{enumerable: false, configurable: false, writable: false},
+    "eat":{enumerable: false,
+        configurable: false,
+        writable: false},
+    "say":{enumerable: false,
+        configurable: false,
+        writable: false},
+    "rename":{enumerable: false,
+        configurable: false,
+        writable: false}
+})
 
-console.log(Object.getOwnPropertyDescriptors(cat));
+Object.defineProperties(cat,{
+    "name":{enumerable: false, configurable: false, writable: false},
+    "say":{enumerable: false,
+        configurable: false,
+        writable: false},
+    "hunt":{enumerable: false,
+        configurable: false,
+        writable: false},
+})
+
+Object.defineProperties(dog, {
+    "name":{enumerable: false, configurable: false, writable: false},
+    "say":{enumerable: false,
+        configurable: false,
+        writable: false}
+})
+
+Object.defineProperties(parrot, {
+    "name":{enumerable: false, configurable: false, writable: false},
+    "say":{enumerable: false,
+        configurable: false,
+        writable: false}
+})
