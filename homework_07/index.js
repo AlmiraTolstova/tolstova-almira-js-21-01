@@ -15,8 +15,8 @@ const animal = {
         console.log(`неизвестное животное молчит`)
     },
     rename(newName) {
-        if(/^[А-я]*$/.test(newName))
-        this.name=newName;
+        if (/^[А-я]*$/.test(newName))
+            this.name = newName;
     }
 }
 
@@ -55,38 +55,52 @@ console.log(parrot);
 
 //Перечисленные методы и свойства должны быть защищены от удаления и перезаписи. Методы должны быть неперечисляемыми.
 Object.defineProperties(animal, {
-    "name":{enumerable: false, configurable: false, writable: false},
-    "eat":{enumerable: false,
+    "name": {enumerable: false, configurable: false, writable: false},
+    "eat": {
+        enumerable: false,
         configurable: false,
-        writable: false},
-    "say":{enumerable: false,
+        writable: false
+    },
+    "say": {
+        enumerable: false,
         configurable: false,
-        writable: false},
-    "rename":{enumerable: false,
+        writable: false
+    },
+    "rename": {
+        enumerable: false,
         configurable: false,
-        writable: false}
+        writable: false
+    }
 })
 
-Object.defineProperties(cat,{
-    "name":{enumerable: false, configurable: false, writable: false},
-    "say":{enumerable: false,
+Object.defineProperties(cat, {
+    "name": {enumerable: false, configurable: false, writable: false},
+    "say": {
+        enumerable: false,
         configurable: false,
-        writable: false},
-    "hunt":{enumerable: false,
+        writable: false
+    },
+    "hunt": {
+        enumerable: false,
         configurable: false,
-        writable: false},
+        writable: false
+    },
 })
 
 Object.defineProperties(dog, {
-    "name":{enumerable: false, configurable: false, writable: false},
-    "say":{enumerable: false,
+    "name": {enumerable: false, configurable: false, writable: false},
+    "say": {
+        enumerable: false,
         configurable: false,
-        writable: false}
+        writable: false
+    }
 })
 
 Object.defineProperties(parrot, {
-    "name":{enumerable: false, configurable: false, writable: false},
-    "say":{enumerable: false,
+    "name": {enumerable: false, configurable: false, writable: false},
+    "say": {
+        enumerable: false,
         configurable: false,
-        writable: false}
+        writable: false
+    }
 })
