@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
+<!--    <link rel="stylesheet" type="text/less" href="index.less">-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>-->
+    <link rel="stylesheet" type="text/css" href="less/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Домашнее задание8</title>
@@ -19,7 +21,7 @@
         <input type="button" id="buttonOrange" value="Сделать Orange">
         <input type="button" id="buttonBlue" value="Сделать Blue">
     </div>
-    <table class="block01__table">
+    <table id="tableId" class="block01__table">
         <tr>
             <th>Имя</th>
             <th>Номер телефона</th>
@@ -33,14 +35,18 @@
     </table>
     <form class="block01__form">
         <label>
-            <input type="text" placeholder="Имя" id="nameInput">
+            <input type="text" placeholder="Имя" id="nameId">
         </label>
         <label>
-            <input type="text" name="tel" placeholder="Номер телефона" required maxlength="13" id="tel">
+            <input type="text" id="phoneId" name="tel"   maxlength="13"
+                   autofocus="autofocus" required
+                   placeholder="Номер телефона">
         </label>
         <input type="button" id="buttonId" value="Добавить">
     </form>
 </div>
 
+<script src="gulpfile.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
