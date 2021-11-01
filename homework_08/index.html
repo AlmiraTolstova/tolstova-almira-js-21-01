@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Домашнее задание8</title>
+</head>
+<body>
+<h1>Тема 8. События браузера, обработчики событий, всплытие и погружение, взаимодействие с DOM, управляемые input'ы</h1>
+<p>Реализация таблицы с именем и номером телефона, с возможностью добавления через валидируемые инпуты новых строк.
+    Добавить три кнопки, для смены цветового оформления таблицы (каждая меняет цвет фона и текста, цвета на выбор
+    слушателей).</p>
+
+<div class="block01">
+    <div>
+        <input type="button" id="buttonGrey" value="Сделать Grey">
+        <input type="button" id="buttonOrange" value="Сделать Orange">
+        <input type="button" id="buttonBlue" value="Сделать Blue">
+    </div>
+    <table id="tableId" class="block01__table">
+        <tr class="thGrey">
+            <th>Имя</th>
+            <th>Номер телефона</th>
+        </tr>
+        <tr class="tdGrey">
+            <td>Альмира</td>
+            <td>+79179004250</td>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+    <form class="block01__form">
+        <label>
+            <input type="text" placeholder="Имя(только кириллица)" id="nameId">
+        </label>
+        <label>
+            <input type="text" id="phoneId" name="tel" maxlength="13"
+                   autofocus="autofocus" required
+                   placeholder="Телефон(+79179114255)">
+        </label>
+        <input type="button" id="buttonId" value="Добавить">
+    </form>
+</div>
+
+<script src="gulpfile.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
