@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнее задание11</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+<h1>Тема 11. Typescript: примитивные типы, сложные типы, дженерики</h1>
+
+<p>
+    3. Реализовать страницу с таблицей. Таблица должна содержать инфрмацию, полученную по API
+    https://swapi.dev/api/people/ (массив объектов в свойстве "results"). А именно росте, весе и поле персонажей (поля
+    "name", "height", "mass" и "gender" соответственно).
+    *Опционально: предусмотреть возможность сортировки таблицы
+    *Опционально: предусмотреть возможность перехода к следующей странице (ссылка содержится в объекте API в свойстве
+    "next") и предыдущей странице (ссылка содержится в объекте API в свойстве "previous")
+</p>
+
+<div>
+    <table class="table">
+        <thead class="table__thead">
+        <tr>
+            <th>name</th>
+            <th>height</th>
+            <th>mass</th>
+            <th>gender</th>
+        </tr>
+        </thead>
+        <tbody id="table">
+
+        </tbody>
+    </table>
+    <div></div>
+</div>
+
+<script src="table.js" type="module"></script>
+</body>
+</html>
