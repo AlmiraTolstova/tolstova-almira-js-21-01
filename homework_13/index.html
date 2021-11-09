@@ -60,15 +60,16 @@
 
         <h1 class="block2__column2-h1">Рыбы на любой вкус </h1>
         <p class="block2__column2-p">Мы продаем рыбов, а не только показываем!</p>
-        <div class="block2__column2-cards">
-            <div class="block2__column2-card">
-                <a class="block2__column2-card-a" href="">Замороженные рыбы</a>
-                <p>Мы заморозили рыбов для вас</p>
-            </div>
-            <div class="block2__column2-card">
-                <a class="block2__column2-card-a" href="">Живые рыбы</a>
-                <p>На кухню или на разведение</p>
-            </div>
+        <div class="block2__column2-cards" id="block2__cards" >
+
+<!--            <div class="block2__column2-card">-->
+<!--                <a class="block2__column2-card-a" href="">Замороженные рыбы</a>-->
+<!--                <p>Мы заморозили рыбов для вас</p>-->
+<!--            </div>-->
+<!--            <div class="block2__column2-card">-->
+<!--                <a class="block2__column2-card-a" href="">Живые рыбы</a>-->
+<!--                <p>На кухню или на разведение</p>-->
+<!--            </div>-->
         </div>
 
         <h3 class="block2__column2-h3">Популярные</h3>
@@ -127,6 +128,14 @@
         <h5 class="footer__container-h5">© 2021 ИП Рыбов О. А.</h5>
     </div>
 </footer>
+
+<!-- Загрузим React. -->
+<!-- Примечание: при деплое на продакшен замените «development.js» на «production.min.js». -->
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<!-- возможность использовать JSX -->
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script src="Repeatable.js" type="text/babel"></script>
 
 </body>
 </html>
