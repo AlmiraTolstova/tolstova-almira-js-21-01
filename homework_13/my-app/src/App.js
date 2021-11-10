@@ -4,6 +4,7 @@ import './App.css';
 import {Card} from "./components/card/Card";
 import {apiResponse} from "./api-mock/api";
 import {Header} from "./components/header/Header";
+import {Sidebar} from "./components/sidebar/Sidebar";
 
 
 class App extends React.Component {
@@ -11,6 +12,7 @@ class App extends React.Component {
     return (
         <div className="App">
             <Header/>
+            <Sidebar/>
           {/*<Card name="Палтус"/>*/}
           {/*<Card name="Сёмга"/>*/}
           {/*<Card name="Сом"/>*/}
