@@ -5,6 +5,7 @@ import {Card} from "./components/card/Card";
 import {apiResponse} from "./api-mock/api";
 import {Header} from "./components/header/Header";
 import {Sidebar} from "./components/sidebar/Sidebar";
+import {Footer} from "./components/footer/Footer";
 
 
 class App extends React.Component {
@@ -20,6 +21,7 @@ class App extends React.Component {
           {/*<Card name="Сельдь"/>*/}
           {/*<Card name="Тунец"/>*/}
             {apiResponse.map((elem,index)=><Card name={elem.name} key={index}/>)}
+            <Footer/>
         </div>
     );
   }
