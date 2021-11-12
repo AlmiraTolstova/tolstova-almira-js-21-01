@@ -1,0 +1,11 @@
+.block1__container{
+    padding: 1rem;
+    max-width: 80rem;
+    margin: auto;
+    background-color:#009A58;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+}
