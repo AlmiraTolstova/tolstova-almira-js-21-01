@@ -1,4 +1,4 @@
-import {Card} from "../components/card/Card";
+import {Cards} from "../forms/card/Cards";
 
 export const apiResponse = [
     {

@@ -1,11 +1,5 @@
-.block2__column1 {
-    /*width: 25%;*/
-    background-color: #F2F2F2;
-    padding: 1rem;
 
-}
-
-.block2__column1-h4 {
+.block2__column1-h4{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -14,11 +8,16 @@
     background-color: #F2F2F2;
 }
 
-.block2__column1-check {
+.block2__column1-check{
     padding-left: 1rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.3rem;
+}
+
+
+.flex{
+    display: flex;
 }

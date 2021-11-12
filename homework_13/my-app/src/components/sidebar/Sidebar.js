@@ -1,7 +1,7 @@
 import React from 'react'
 import './Sidebar.css'
 
-export class Sidebar extends React.Component{
+export class Sidebar extends React.Component {
     render() {
         return <div className="block2__column1">
             <h4 className="block2__column1-h4">Морская рыба</h4>
@@ -35,5 +35,5 @@ export class Sidebar extends React.Component{
                 <input type="checkbox" id="checkbox1"/><label htmlFor="">Налим</label>
             </div>
         </div>
-        }
     }
+}

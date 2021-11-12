@@ -1,14 +1,7 @@
-.block1{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-
 .block1__container{
     padding: 1rem;
     max-width: 80rem;
     margin: auto;
-    height: 4rem;
     background-color:#009A58;
     font-family: 'Roboto';
     font-style: normal;
