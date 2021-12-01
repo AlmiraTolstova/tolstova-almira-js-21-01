@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body, #root {
+  height: 100%;
+
+  font-size: 1.0417vw;
+}
+.header{
+  background-color: #7C4DFF;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+  overflow:hidden;
+  background-color: gainsboro;
+}
+.footer {
+  background-color: #7C4DFF;
+  flex: 0 0 auto;
+}
+.header_dark{
+  background-color: #565656;
+}
+.content_dark{
+  background-color: #2D2D2D;
+}
+.footer_dark{
+  background-color: #565656;
+}

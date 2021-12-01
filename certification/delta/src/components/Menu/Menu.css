@@ -1,0 +1,22 @@
+.navigator{
+    display: flex;
+    background-color: #7C4DFF;
+    justify-content: space-between;
+}
+.navigator_dark{
+    background-color: #565656;
+}
+.navigator-text{
+    color: darkcyan;
+}
+.navigator-text_dark{
+    color: white;
+}
+.user-info__photo{
+    width: 50px;
+    border-radius: 50%;
+    padding-right: 8px;
+}
+.user-info__name{
+    padding-right: 8px;
+}

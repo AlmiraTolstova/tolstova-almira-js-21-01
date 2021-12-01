@@ -1,0 +1,12 @@
+.footer_component{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.switch-component{
+    display: inline-flex;
+    color: white;
+}
+.footer__component_dark{
+    background-color: #565656;
+}
