@@ -1,56 +1,49 @@
 const input = document.getElementById('text-input')
-document.getElementById('send-payload-btn').addEventListener('click', () => {
-  socket.send(JSON.stringify({
-    type:'echo',
-    payload: input.value,
-    delay: 1500
-  }))
-})
-document.getElementById('send-counter-btn').addEventListener('click', () => {
-  socket.send(JSON.stringify({
-    type:'counter',
-    interval: 1500,
-    take: input.value,
-  }));
-})
-//-----------------------------------------------------------------------
+const idInput = document.getElementById('id-input')
+const sendButton = document.getElementById('send-payload-btn')
+let id = ''
+
 const socket = new WebSocket( // Запрос на открытие соединения
-  'ws://localhost:9000' // URL для подключения
+    'ws://localhost:9000' // URL для подключения
 )
+
+input.disabled=true;
+sendButton.disabled = true;
+
+document.getElementById('send-payload-btn')
+    .addEventListener('click', () => {
+    socket.send(JSON.stringify({
+        type:'sendMessage',
+        text: input.value,
+        ownerId:id,
+        recId:idInput.value
+    }))
+})
+
+socket.addEventListener('open', (e) => { // Функция, вызываемая после успешного открытия соединения
+    console.log(`соединение открыто`)
+})
 
 socket.onmessage = (e) => { // Обработчик сообщений от сервера◘
     console.group('пришло сообщение')
-    console.log(JSON.parse(e.data))
+    const message = JSON.parse(e.data)
     console.groupEnd()
+    if (message.type === 'id') {
+        id = message.id;
+        console.log(`Получили Id:${id}`)
+    }else if(message.type==='message'){
+        input.value = message.text;
+        console.log(`Сообщение от ${message.owner}`)
+        console.log(`Текст от ${message.text}`)
+        input.disabled=false;
+        sendButton.disabled = false;
+    }
+    console.groupEnd()
+
 }
-
-socket.addEventListener('open', (e) => { // Функция, вызываемая после успешного открытия соединения
-  console.group('соединение открыто')
-  console.log(e)
-  console.groupEnd()
-
-  socket.send(JSON.stringify({
-    type:'echo',
-    payload: 'test',
-  }))
-})
 
 socket.onclose = (e) => { // Обработчик закрытия соединения
-  console.group('соединение закрыто')
-  console.log(e)
-  console.groupEnd()
+    console.group('соединение закрыто')
 }
 
-console.log(socket.bufferedAmount) // Кол-во байт буфферизированных (пока неотправленных) данных
-console.log(socket.readyState) // Состояние текущего соединения
-// 0 - Соединение ещё не установлено
-// 1 - Обмен данными
-// 2 - Соединение щакрывается
-// 3 - Соединение закрыто
 
-// setTimeout(
-//   () => socket.close( // Закрытие соединения по инициативе клиента
-//   1000, // Код щакрытие
-//   'GOODBYE' // Описание
-// ), 500)
-setTimeout(() =>console.log(socket.readyState), 1000)
